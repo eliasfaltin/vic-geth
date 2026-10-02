@@ -54,6 +54,7 @@ When testing, follow these rules:
 - Execute tests per package to prevent timeout.
 <!-- Project-specific / Testing -->
 - Before running tests that use the fixtures in `tests/testdata`, update the git submodule to the revision pinned in the commit tree (not in a file): `git submodule update --init --checkout tests/testdata`.
+- Package rlp/rlpgen must be tested using environment variable `GOTOOLCHAIN=local`.
 
 ## Checklist
 
